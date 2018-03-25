@@ -3,10 +3,10 @@ def fn(a,b):
         a=a/b
     return (a)
 def isugly(n):
-    no=fn(n,2)
-    no=fn(n,3)
-    no=fn(n,5)
-    if(no==1):
+    n=fn(n,2)
+    n=fn(n,3)
+    n=fn(n,5)
+    if(n==1):
         return 1
     else:
         return 0
@@ -15,7 +15,7 @@ def nugly(n):
     i=1
     while(c<n):
         i+=1
-        if(isugly(i)==1):
+        if isugly(i):
             c+=1
     return i        
 
